@@ -180,8 +180,10 @@ footer a {
 }
 
 .badge {
-    border-inline-color: #3f6bca;
-    border:2px solid #a02571;
+    outline-style: solid;
+    outline-width: medium;
+    outline-color: #3f6bca;
+    border: 4px solid #a02571;
 }
 
 @media screen and (min-width:576px) {
@@ -244,4 +246,28 @@ footer a {
             background: #918b8b;
             font-size: 1rem;
         }
+}
+
+@media print {
+    header {
+        display: none;
+    }
+    article {
+        font-size: large;
+    }
+    th, td {
+        padding: 10px 10px;
+    }
+    iframe {
+        display: none;
+    }
+    section {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
 }
